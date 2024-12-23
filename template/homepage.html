@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'CSS/homepage.css' %}">
+<div id="view1">
+    <div class="middle">
+        <p>
+            We only <span class="text-highlight">
+                teach
+            </span> 
+            <br>
+            what we are really <br>
+            really <span class="italic">good</span> at. <br>
+        </p>
+        <a href="{% url 'website:courses' %}" id="button">
+            Check Courses-Make an Impact
+        </a><br><br><br><br>
+        <div class="side-text">
+            Get ready to accelerate your career
+            with customized courses and leave
+            your mark in the tech industry
+            (majji pinda u study 
+            u will get the job not me )
+        </div>
+        <br><br>
+    </div>
+    <div class="bottom">
+        <div class="mileStones">
+            <div class="mileStone">
+                <div class="text">
+                    <h2>25k+</h2>
+                    <p>Students taught</p>
+                </div>
+            </div>
+            <div class="mileStone">
+                <div class="text">
+                    <h2>20+</h2>
+                    <p>Instructors</p>
+                </div>
+            </div>
+            <div class="mileStone">
+                <div class="text">
+                    <h2>431K+</h2>
+                    <p>Youtube Subs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="view2">
+    <div class="top">
+        We do whatever it takes to help you <br>understand the concepts.
+    </div>
+    <div class="middle">
+        <iframe frameborder="0" src="https://www.youtube.com/embed/60SRAWmMXyc"></iframe>
+    </div>
+    <div class="bottom">
+        <a href="https://www.youtube.com/@thesheryianscodingschool" target="_blank" id="button">
+            Explore free learning
+        </a>
+    </div>
+</div>
+<div id="view3">
+    <p>Courses Offered.</p>
+    <div id="courses">
+        <div class="course">
+            <a href="" id="image_link">
+                <img src="{% static 'images/webdevelopment.png'%}" alt="">
+                <p>Web Development</p>
+            </a>
+            <a href="" id="link">View Details</a>
+        </div>
+        <div class="course">
+            <a href="" id="image_link">
+                <img src="{% static 'images/java.png'%}" alt="">
+                <p>Java Programming</p>
+            </a>
+            <a href="" id="link">View Details</a>
+        </div>
+        <div class="course">
+            <a href="" id="image_link">
+                <img src="{% static 'images/python.png'%}" alt="">
+                <p>Python Programming</p>
+            </a>
+            <a href="" id="link">View Details</a>
+        </div>
+        <div class="course">
+            <a href="" id="image_link">
+                <img src="{% static 'images/django.png'%}" alt="">
+                <p>Django Framework</p>
+            </a>
+            <a href="" id="link">View Details</a>
+        </div>
+        <div class="course">
+            <a href="" id="image_link">
+                <img src="{% static 'images/devops.png'%}" alt="">
+                <p>DevOps</p>
+            </a>
+            <a href="" id="link">View Details</a>
+        </div>
+        <div class="course">
+            <a href="" id="image_link">
+                <img src="{% static 'images/uiux.png'%}" alt="">
+                <p>Ui/Ux Design</p>
+            </a>
+            <a href="" id="link">View Details</a>
+        </div>
+
+    </div>
+</div>
+<div  class="companies">
+            <center><h1>Top <span style="color: aquamarine;font-family: 'NeueMachina';">companies</span> our students</h1>
+            <h1>working with</h1>
+            <div style="width: 100%;"><img src="https://ik.imagekit.io/sheryians/companies-logo/companies_CcvVE6pUo.png" alt="Companies" style="width: 60%;height: 400px;"></div>
+             
+        </div>
+        <br>
+        <center><button style="width: 300px;background-color: aquamarine;height: 60px;font-size: large;border-radius: 20px;">Explore free learning</button><br><br></center>
+    
+    
+    </div>
+{% endblock content %}
